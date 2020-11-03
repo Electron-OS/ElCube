@@ -1,0 +1,17 @@
+<input type="text" #input
+
+
+       [attr.data-step]="step"
+       [attr.data-fixed]="fixed"
+       [attr.data-plus-icon]="plusIcon"
+       [attr.data-minus-icon]="minusIcon"
+       [attr.data-buttons-position]="buttonsPosition"
+
+       [attr.data-hide-cursor]="hideCursor"
+       [style.textShadow]="hideCursor ? '0 0 0 #1d1d1d' : null"
+
+       [attr.data-cls-spinner]="clsSpinner"
+       [attr.data-cls-spinner-input]="clsSpinnerInput"
+       [attr.data-cls-spinner-button]="clsSpinnerButton"
+       [attr.data-cls-spinner-button-minus]="clsSpinnerButtonMinus"
+       [attr.data-cls-spinner-button-plus]="clsSpinnerButtonPlus" >

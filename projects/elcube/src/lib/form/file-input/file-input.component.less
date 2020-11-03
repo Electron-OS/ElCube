@@ -1,0 +1,12 @@
+@import (once) 'node_modules/metro4/source/include/vars';
+@import (once) 'node_modules/metro4/source/include/mixins';
+
+.drop-zone {
+  each(@accentColors, {
+    @color: "@{value}Color";
+
+    &.@{value} {
+      outline-color: @@color;
+    }
+  })
+}
